@@ -23,10 +23,10 @@ int main() {
         break;
     }
 
-    int result = x;
+    int result = 1;
     
     // Um número x elevado a potência y é mesma coisa que multiplicar x em y vezes, exemplo 2 ^ 4 = 2 * 2 * 2 * 2
-    for (int i = 1; i < y; i++) {
+    for (int i = 0; i < y; i++) {
         result *= x;
     }
 
