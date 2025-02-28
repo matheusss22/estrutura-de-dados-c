@@ -39,8 +39,7 @@ int main() {
     printf("========================================\n");
 
     // Entrada da quantidade de cada produto:
-    for (__uint8_t i = 0; i < tamanho_lista; i++)
-    {
+    for (__uint8_t i = 0; i < tamanho_lista; i++) {
         printf("Digite a quantidade de %s: ", produto[i]);
         scanf("%d", &quantidades_produto[i]);
         getchar();
@@ -49,8 +48,7 @@ int main() {
     printf("========================================\n");
 
     // Entrada do valor de cada produto:
-    for (__uint8_t i = 0; i < tamanho_lista; i++)
-    {
+    for (__uint8_t i = 0; i < tamanho_lista; i++) {
         printf("Digite o valor unitário de %s: R$", produto[i]);
         scanf("%f", &valores_produtos[i]);
         getchar();
@@ -63,8 +61,7 @@ int main() {
 
     // Imprime relatório de compra
     printf("Retalório de compra:\n");
-    for (__uint8_t i = 0; i < tamanho_lista; i++)
-    {
+    for (__uint8_t i = 0; i < tamanho_lista; i++) {
         printf("%d x %s = R$%.2f\n", quantidades_produto[i], produto[i], quantidades_produto[i] * valores_produtos[i]);
         total += quantidades_produto[i] * valores_produtos[i];
     }

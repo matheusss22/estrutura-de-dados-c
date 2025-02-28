@@ -9,8 +9,7 @@ int main() {
     fgets(nome, sizeof(nome), stdin);
 
 
-    for (int i = 0; i < 7; i++)
-    {
+    for (int i = 0; i < 7; i++) {
         printf("Digite a nota do jurado %d: ", i+1);
         scanf("%f", &nota_jurados[i]);
         getchar();
@@ -19,8 +18,7 @@ int main() {
     float melhor_nota = nota_jurados[0];
     float pior_nota = nota_jurados[0];
 
-    for (int i = 1; i < 7; i++)
-    {
+    for (int i = 1; i < 7; i++) {
         if (melhor_nota<=nota_jurados[i]) {
             melhor_nota=nota_jurados[i];
         }
@@ -31,8 +29,7 @@ int main() {
     }
 
     float acumulador = 0;
-    for (int i = 0; i < 7; i++)
-    {
+    for (int i = 0; i < 7; i++) {
         acumulador += nota_jurados[i];
     }
 

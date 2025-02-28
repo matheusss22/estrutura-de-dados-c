@@ -5,8 +5,7 @@ int main() {
     int x,y;
 
     // Loop para verificar se o usuário entrou com valores repetidos
-    while (1)
-    {
+    while (1) {
         printf("Digite o primeiro numero: ");
         scanf("%d", &x);
         getchar();
@@ -16,7 +15,7 @@ int main() {
         getchar();
 
 
-        if (x==y){
+        if (x==y) {
             printf("Não digite valores iguais!\n");
             continue;
         }
