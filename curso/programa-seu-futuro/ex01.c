@@ -12,7 +12,7 @@ int main() {
     // =================================================================================================================================
     // Criando vetores
 
-    // Primeira maneira (Específica o tamanho e inicializa todos os elementos com zero)
+    // Primeira maneira - Específica o tamanho e inicializa todos os elementos com zero:
     int idades_1[10] = {0};
 
     for (size_t i = 0; i < 10; i++) {
@@ -20,7 +20,8 @@ int main() {
     }
     printf("\nTamanho = %ld\n\n", sizeof(idades_1)/sizeof(int));
     
-    // Segunda maneira (Não específica o tamanho, mas inicia cada elemento, logo, o tamanho do vetor assumirá a quantidade de elementos)
+    // Segunda maneira - Não específica o tamanho, mas inicia cada elemento, logo, o tamanho 
+    // do vetor assumirá a quantidade de elementos:
     int idades_2[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     for (size_t i = 0; i < 10; i++) {
@@ -28,7 +29,7 @@ int main() {
     }
     printf("\nTamanho = %ld\n\n", sizeof(idades_2)/sizeof(int));
 
-    // Terceira maneira
+    // Terceira maneira - Específica o tamanho e inicia cada elemento individualmente
     int idades_3[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
     for (size_t i = 0; i < 10; i++) {
@@ -36,7 +37,7 @@ int main() {
     }
     printf("\nTamanho = %ld\n\n", sizeof(idades_3)/sizeof(int));
 
-    // Quarta maneira (Sem inicializar valores - Lixo de memória)
+    // Quarta maneira - Sem inicializar valores - Lixo de memória
     int idades_4[10];
     
     for (size_t i = 0; i < 10; i++) {
